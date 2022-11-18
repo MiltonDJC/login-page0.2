@@ -62,8 +62,14 @@ hr{
     font-size: 12px;
 }
 /* ------------------------------- RIGHT SIDE OF PAGE ------------------------------- */
+.right-side-page{
+    position: relative;
+    bottom: 70px;
+}
 .title-right-side{
     font-family: 'Secular One', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 .second-subtitle-right-side{
     font-family: 'Noto Sans', sans-serif;
@@ -72,39 +78,43 @@ hr{
 }
 /* FORMS */
 .form__group {
-    position: relative;
-    padding: 15px 0 0;
-    margin-top: 10px;
-    width: 50%;
+    display: flex;
+    margin: 15px 0 5px;
+    width: 100%;
 }
 .form__field {
     font-family: inherit;
-    width: 100%;
+    width: 80%;
     border: 0;
     border-bottom: 2px solid gray;
-    outline: 0;
+    outline: 0; /* para quitar el border al hacer focus en el form */
     font-size: 1.3rem;
     color: black;
     padding: 7px 0;
-    background: transparent;
-    transition: border-color 0.2s;
 }
-.form__field:focus {
+.form__field:focus{
     padding-bottom: 6px;  
-    font-weight: 700;
+    font-weight: lighter;
     border-width: 3px;
     border-image: linear-gradient(to right, #1b99e2,#20c8df);
     border-image-slice: 1;
 }
-
-/* #email, #password{
-    font-size: 15px;
-    
-} */
+.form__label{
+    margin: 5px;
+}
 /* KEEP & FORGOT */
 .container-keep-forgot{
     display: flex;
     justify-content: space-evenly;
+}
+.forgot{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.forgot:hover{
+    text-decoration: underline 2px;
+    color: blue;
 }
 /* BUTTON */
 .button-signup{
