@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: skyblue;
+}
+.container{
+    display: flex;
+    text-align: center;
+    margin: 50px;
+    background-color: white;
+    height: 500px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+/* WIDTH'S CONTENT OF PAGE */
+section{
+    max-width: 50%;
+}
+/* POSITION OF CONTENT */
+article{
+    margin: 50px; /* distancia entre el contenido y los extremos*/
+    position: relative;
+    top: 100px;
+}
+/* ------------------------------- LEFT SIDE OF PAGE ------------------------------- */
+/* #left-article{
+    margin: -50px 0;
+} */
+.left-side-page{
+    background-image: url(https://i.pinimg.com/564x/9f/06/7d/9f067de13aa05f0ace92164bb8ac09ac.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px; /* redondeo del lado izquierdo */
+}
+.first-subtitle-left-side{
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+.title-left-side{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    font-weight: lighter;
+}
+hr{
+    display: inline-block;
+    margin: 10px 0 20px;
+    text-align: center;
+    width: 10%;
+    height: 10px;
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+}
+.second-subtitle-left-side{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+}
+/* ------------------------------- RIGHT SIDE OF PAGE ------------------------------- */
+.title-right-side{
+    font-family: 'Secular One', sans-serif;
+}
+.second-subtitle-right-side{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+/* FORMS */
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.form__field:focus {
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #1b99e2,#20c8df);
+    border-image-slice: 1;
+}
+
+/* #email, #password{
+    font-size: 15px;
+    
+} */
+/* KEEP & FORGOT */
+.container-keep-forgot{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* BUTTON */
+.button-signup{
+    align-items: center;
+    appearance: none;
+    background-color: #3EB2FD;
+    background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: CircularStd,sans-serif;
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 6px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s,background-position .2s;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.button-signup:active,.button-signup:focus {
+    outline: none;
+}
+.button-signup:hover {
+    background-position: -20px -20px;
+}
+.button-signup:focus:not(:active) {
+    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
